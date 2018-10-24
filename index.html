@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hide our Blocks!</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            console.log('document is ready');
+            
+
+           $('.dojocat').hover(function()
+                {
+                    console.log('hovering');
+                    $(this).attr("src", "heisencat.jpg");
+                },
+                function(){
+                    $(this).attr("src", "dojocat.jpg");
+                }
+            )
+
+            $('.linkcat').hover(function()
+                {
+                    console.log('hovering');
+                    $(this).attr("src", "mario.jpg");
+                    
+                },
+                function(){
+                    $(this).attr("src", "linkcat.jpg");
+                }
+            )
+            $('.iron').hover(function()
+                {
+                    console.log('hovering');
+                    $(this).attr("src", "adventure-cat.png");
+                },
+                function(){
+                    $(this).attr("src", "ironcat.jpg");
+                }
+            )
+            $('.coder').hover(function()
+                {
+                    console.log('hovering');
+                    $(this).attr("src", "kantana.jpg");
+                },
+                function(){
+                    $(this).attr("src", "codercat.jpg");
+                }
+            )
+
+            });
+    </script>
+</head>
+<body>
+    <div id="wrapper">
+        <h1>Hover In/Out</h1>
+        <img class="dojocat" src="dojocat.jpg" alt="Dojocat">
+        <img class="linkcat" src="linkcat.jpg" alt="linkcat">
+        <img class="iron" src="ironcat.jpg" alt="ironcat">
+        <img class="coder" src="codercat.jpg" alt="codercat">
+  
+
+    </div><!-- end of wrapper -->
+</body>
+</html>
